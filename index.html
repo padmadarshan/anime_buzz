@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Buzz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .search-bar {
+      background-color: violet;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .search-bar input {
+      width: 40%;
+      padding: 0.6rem;
+      border: 1px solid #000;
+      font-size: 1rem;
+    }
+
+    .search-bar button {
+      padding: 0.6rem 1.2rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .icon-nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eee;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    .icon {
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+      padding: 0.5rem 1rem;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+      color: violet;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Anime Buzz</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search anime, music, ebooks..." />
+    <button>Search</button>
+  </div>
+
+  <!-- Navigation Icons -->
+  <div class="icon-nav">
+    <div class="icon" onclick="redirect('video.html')">🎥  Anime Videos</div>
+    <link rel="stylesheet" href="./video.html" >
+    <div class="icon" onclick="redirect('bestseller.html')">🔥 Best Sellers</div>
+    <div class="icon" onclick="redirect('musicpage.html')">🎵 Music</div>
+    <div class="icon" onclick="redirect('ebooks.html')" >📚 Anime books</div>
+  </div>
+
+  <!-- Product List -->
+  <div class="product-grid">
+    <!-- Start Product Items -->
+    <div class="product">
+      <img src="./31MGO4ndlML.webp" alt="Product 1" />
+      <h3>Product 1</h3>
+    </div>
+    <div class="product">
+      <img src="./41F2okw0CkL.webp" alt="Product 2" />
+      <h3>Product 2</h3>
+    </div>
+    <div class="product">
+      <img src="./51FKX263CEL.webp" alt="Product 3" />
+      <h3>Product 3</h3>
+    </div>
+    <div class="product">
+      <img src="./51GRo+RJeyL.webp" alt="Product 4" />
+      <h3>Product 4</h3>
+    </div>
+    <div class="product">
+      <img src="./51kpFxc7mIL.webp" alt="Product 5" />
+      <h3>Product 5</h3>
+    </div>
+    <div class="product">
+      <img src="./51T-+Nbk-IL.webp" alt="Product 6" />
+      <h3>Product 6</h3>
+    </div>
+    <div class="product">
+      <img src="./51xS-beOaaL.webp" alt="Product 7" />
+      <h3>Product 7</h3>
+    </div>
+    <div class="product">
+      <img src="./51yS1wfNhML.webp" alt="Product 8" />
+      <h3>Product 8</h3>
+    </div>
+    <div class="product">
+      <img src="./61R4JxVirYL.webp" alt="Product 9" />
+      <h3>Product 9</h3>
+    </div>
+    <div class="product">
+      <img src="./719qRQKCJtL.webp" alt="Product 10" />
+      <h3>Product 10</h3>
+    </div>
+    <div class="product">
+      <img src="./71bRhmXkEML.webp" alt="Product 11" />
+      <h3>Product 11</h3>
+    </div>
+    <div class="product">
+      <img src="./71outy15ugL.webp" alt="Product 12" />
+      <h3>Product 12</h3>
+    </div>
+    <div class="product">
+      <img src="./71TEFe4NUbL.webp" alt="Product 13" />
+      <h3>Product 13</h3>
+    </div>
+    <div class="product">
+      <img src="./71u3n2o-OIL.webp" alt="Product 14" />
+      <h3>Product 14</h3>
+    </div>
+    <div class="product">
+      <img src="./71YFTMR+3OL.webp" alt="Product 15" />
+      <h3>Product 15</h3>
+    </div>
+    <div class="product">
+      <img src="./81oNKajdkZL.webp" alt="Product 16" />
+      <h3>Product 16</h3>
+    </div>
+    <div class="product">
+      <img src="./811su4epKFL.webp" alt="Product 17" />
+      <h3>Product 17</h3>
+    </div>
+    <div class="product">
+      <img src="./81470MdpSJL.webp" alt="Product 18" />
+      <h3>Product 18</h3>
+    </div>
+    <div class="product">
+      <img src="./815GI7bAa3L.webp" alt="Product 19" />
+      <h3>Product 19</h3>
+    </div>
+    <div class="product">
+      <img src="./81l6LXEVfEL.webp" alt="Product 20" />
+      <h3>Product 20</h3>
+    </div>
+    <!-- End Product Items -->
+  </div>`.join('')
+  </div>
+  <!-- Enhanced Product Grid -->
+<div class="product-grid">
+    <!-- Start Product Items -->
+    <div class="product">
+      <img src="./51BucomQlHL.webp" alt="Naruto Vol. 1" />
+      <h3>Naruto Vol. 1</h3>
+      <p>This is the first volume of Naruto, a classic anime/manga series.</p>
+      <p class="price">$12.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="./page-0001.webp" alt="Attack on Titan Vol. 1" />
+      <h3>Attack on Titan Vol. 1</h3>
+      <p>A thrilling action-packed series about humanity fighting against giant humanoid creatures.</p>
+      <p class="price">$14.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="./8165try11NL.webp" alt="One Piece Ace story" />
+      <h3>One Piece Vol. 1</h3>
+      <p>The journey of Monkey D. Luffy, as he seeks the One Piece treasure.</p>
+      <p class="price">$11.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- Add more product items below -->
+</div>
+<!-- Featured Anime Section -->
+<div class="featured-section">
+  <h2>Featured Anime of the Week</h2>
+  <div class="featured-item">
+    <img src="./demon-slayer-anime-vy37autfo82jvft7.webp" alt="Demon Slayer" />
+    <div class="featured-info">
+      <h3>Demon Slayer: Kimetsu no Yaiba</h3>
+      <p>Follow Tanjiro Kamado’s journey to save his sister Nezuko from demonic transformation in this action-packed anime.</p>
+      <button>Watch Now</button>
+    </div>
+  </div>
+</div>
+<!-- Customer Reviews Section -->
+<div class="reviews-section">
+  <h2>What Our Customers Say</h2>
+  <div class="reviews">
+    <div class="review">
+      <p>"Demon Slayer is hands down one of the best anime I've ever watched! The animation is amazing!" - Sarah</p>
+    </div>
+    <div class="review">
+      <p>"I loved One Piece Vol. 1! It's a great starting point for newcomers to the anime." - Jake</p>
+    </div>
+    <div class="review">
+      <p>"Naruto Vol. 1 brought back so many memories. I highly recommend it to anime fans!" - Emily</p>
+    </div>
+  </div>
+</div>
+<!-- Anime Quiz Section -->
+<div class="quiz-section">
+  <h2>Test Your Anime Knowledge!</h2>
+  <div id="quiz">
+    <p>What is the name of Naruto's village?</p>
+    <button onclick="checkAnswer('Konoha')">Konoha</button>
+    <button onclick="checkAnswer('Amegakure')">Amegakure</button>
+    <button onclick="checkAnswer('Kiri')">Kiri</button>
+    <button onclick="checkAnswer('Iwagakure')">Iwagakure</button>
+    <p id="quiz-result"></p>
+  </div>
+</div>
+
+<script>
+  function checkAnswer(answer) {
+    const result = document.getElementById('quiz-result');
+    if (answer === 'Konoha') {
+      result.innerText = "Correct! Konoha is Naruto's village.";
+    } else {
+      result.innerText = "Incorrect. Try again!";
+    }
+  }
+</script>
+<!-- Newsletter Signup Section -->
+<div class="newsletter-section">
+  <h2>Stay Updated with Anime Buzz</h2>
+  <p>Subscribe to our newsletter and get the latest anime news and promotions delivered to your inbox!</p>
+  <form action="#" method="post">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+  <script>
+    function redirect(page) {
+  const element = event.target;
+  element.style.transform = 'scale(1.3)';
+  setTimeout(() => {
+    window.location.href = page;
+  }, 300);
+}
+
+ </script>
+ <!-- Detailed Footer Section -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>Anime Buzz</h3>
+      <p>Your one-stop platform for everything anime! Explore anime shows, movies, music, and more.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="bestsellers.html">Best Sellers</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="ebooks.html">Ebooks</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: support@animebuzz.com</p>
+      <p>Phone: +123-456-7890</p>
+      <p>Address: 123 Anime Blvd, Otaku City, Japan</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Anime Buzz. All rights reserved.</p>
+    <div class="legal-links">
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 3rem 0;
+    font-size: 0.9rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-left, .footer-links, .footer-social, .footer-contact {
+    flex: 1;
+    min-width: 220px;
+  }
+
+  .footer-left h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-left p {
+    font-size: 0.9rem;
+  }
+
+  .footer-links h4, .footer-social h4, .footer-contact h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .footer-links ul li a:hover {
+    color: violet;
+  }
+
+  .footer-social .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-social .social-icons a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-contact p {
+    margin: 0.5rem 0;
+  }
+
+  .footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom .legal-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+
+  .footer-bottom .legal-links a:hover {
+    color: violet;
+  }
+</style>
+
+</body>
+</html>
